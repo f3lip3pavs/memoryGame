@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040;
+}
+
+.icon{
+    width: 120px;
+}
+
+.cards{
+    position: relative;
+    backface-visibility: hidden; /*faz com que o elemento fique invisivel ao ser virado para o lado oposto */
+    transform-style: preserve-3d;/*faz com que a carta que esta fora do escopo do mouse fique visivel novamente ao der desvirada*/
+    width: 120px;
+    height: 120px;
+    /* box-sizing: border-box; */
+}
+
+.card-front{
+    /* display: inline-block; */
+    background-color: #101c2c;
+    transform: rotatey(180deg); /*mantem a carta da frente virada para o çado oposto */
+}
+
+.card-back{
+    font-size: 45px;
+    background-color: rgb(255, 244, 244);
+    color: red;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.card-back, .card-front{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.cards:hover{/*vira a carta de tras para o lado oposto e a carta da frente para o lado certo ao mesmo tempo (inverte as posiçoes das cartas)*/
+    transform: rotatey(180deg);
+    transition: 1s;
+}
+
+#gameBoard{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 700px;
+    
+}
+
+/*tela de game over*/
+#gameOver{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none; /*flex*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    border-style: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Merienda One', cursive;
+    background-color: yellow;
+    
+}
+
+h1{
+    font-size: 35px;
+    font-family: 'Merienda One', cursive;
+    color: white;
+    
+}
+
+
+
+
+
+
+

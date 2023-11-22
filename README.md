@@ -15,3 +15,4 @@ Resumo: Este é um jogo da memoria com os meus animes favoritos até o momento!
 Objetivo: Estudar a arquitetura MVC, lógica de programação e colocar o projeto em produção.
 
 # Demo
+![demo](https://github.com/f3lip3pavs/memoryGame/assets/74160667/d57eb446-2a6a-4136-86d2-ffbc0a726f6d)

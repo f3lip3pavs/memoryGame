@@ -10,7 +10,7 @@
 
 Resumo: Este é um jogo da memoria com os meus animes favoritos até o momento!
 
-##### Atenção! Esse projeto tem como única e exclusiva finalidade o estudo das tecnologias envolvidas. Não deve ser usado para fins comerciais.
+### Acesse o game: https://f3lip3pavs.github.io/memoryGame/
 
 Objetivo: Estudar a arquitetura MVC, lógica de programação e colocar o projeto em produção.
 
